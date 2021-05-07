@@ -32,18 +32,15 @@
           <img id="logo" src="/images/logo.svg" alt="Logo" />
           <span id="notification">
             <img src="/images/alert-octagon.svg" alt="Alerta" />
-            <% if(freeHours <= 0){ %>
-              Você não tem horas livres
-            <% }else{ %>
-              Você tem <%= freeHours %> horas livres no seu dia
-            <% } %>
+            Você tem 2 horas livres no seu dia
           </span>
           <a href="/profile" id="avatar-profile">
-            <p><%= profile.name %> <span>Ver perfil</span></p>
-            <img src="<%= profile.avatar %>" />
+            <p>Anderson <span>Ver perfil</span></p>
+            <img
+              src="https://github.com/andersonfpv.png"
+            />
           </a>
         </section>
-
 
         <div class="separator"></div>
 
@@ -52,15 +49,15 @@
 
           <div class="info">
             <div class="total">
-              <strong><%= statusCount.total %></strong>
+              <strong>12</strong>
               Projetos ao total
             </div>
             <div class="in-progress">
-              <strong><%= statusCount.progress %></strong>
+              <strong>7</strong>
               Em andamento
             </div>
             <div class="finished">
-              <strong><%= statusCount.done %></strong>
+              <strong>4</strong>
               Encerrados
             </div>
           </div>
@@ -119,6 +116,8 @@
             </div>
             <!-- end card -->
           <% }) %> 
+
+         
 
         </div>
         <!-- end cards -->
