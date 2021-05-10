@@ -22,7 +22,7 @@ const initDb = {
             name TEXT,
             daily_hours INT,
             total_hours INT,
-            ctreated_at DATETIME
+            created_at DATETIME
         )`);
         
         await db.run(`INSERT INTO profile (
@@ -31,21 +31,23 @@ const initDb = {
             monthly_budget,
             days_per_week,
             hours_per_day,
-            vacation_per_year
+            vacation_per_year,
+            value_hour
         ) VALUES (
             "Anderson",
             "https://github.com/andersonfpv.png",
             9000,
             5,
             5,
-            4
+            4,
+            70
         );`);
         
         await db.run(`INSERT INTO jobs (
             name,
             daily_hours,
             total_hours,
-            ctreated_at
+            created_at
         ) VALUES (
             "Pizzaria Guloso",
             2,
@@ -57,7 +59,7 @@ const initDb = {
             name,
             daily_hours,
             total_hours,
-            ctreated_at
+            created_at
         ) VALUES (
             "OneTwo Projects",
             3,
